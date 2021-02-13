@@ -1,0 +1,3 @@
+
+CONNECTION_URL = f"mongodb+srv://{USR}:{PWD}@cluster0.zvs9q.mongodb.net/{DB_NAME}?retryWrites=true&w=majority"
+password = Test#
