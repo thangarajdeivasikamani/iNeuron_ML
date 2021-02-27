@@ -57,4 +57,5 @@ docs/_build/
 .ipynb_checkpoints
 
 #Pychamp files
-.idea/
+*/.idea/workspace.xml 
+*/.idea/tasks.xml
