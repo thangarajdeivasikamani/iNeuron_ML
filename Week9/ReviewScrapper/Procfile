@@ -1,4 +1,4 @@
-web: gunicorn app:app
+web: gunicorn app:RS_Heroku
 
 
 
