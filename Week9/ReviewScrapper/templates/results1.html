@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Review Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+  <div class="table-users" >
+   <div class="header">Product Data</div>
+
+   <table cellspacing="1">
+      <tr>
+        <th>Product_Name</th>
+        <th>Product_Rating</th>
+        <th>Rating_Counts</th>
+        <th>Review_Counts</th>
+        <th>Product_Description</th>
+        <th>Offer_Price</th>
+        <th>Actual_Price</th>
+        <th>Offer_Percentage</th>
+        <th>Offer_Difference</th>
+        <th>Avaliable_Offer</th>
+        <th>Warranty_Info</th>
+        <th>Highlights_Info</th>
+        <th>Easy_Payment_Info</th>
+        <th>Seller_Info</th>
+        <th>Description_Info</th>
+        <th>Product_Specification</th>
+        <th>Reviewer_Name</th>
+        <th>Reviewer_Rating</th>
+        <th>Comment_Heading</th>
+        <th>Comment</th>
+        <th>Review_Comments</th>
+        <th>Thums_Up</th>
+        <th width="150">Thums_Down</th>
+      </tr>
+         {% for review in reviews %}
+      <tr>
+         <td>{{review['Product_Name']}}</td>
+         <td>{{review['Product_Rating']}}</td>
+         <td>{{review['Rating_Counts']}}</td>
+         <td>{{review['Review_Counts']}}</td>
+         <td>{{review['Product_Description']}} </td>
+         <td>{{review['Offer_Price']}}</td>
+         <td>{{review['Actual_Price']}}</td>
+         <td>{{review['Offer_Percentage']}}</td>
+         <td>{{review['Offer_Difference']}}</td>
+         <td>{{review['Avaliable_Offer']}} </td>
+         <td>{{review['Warranty_Info']}}</td>
+         <td>{{review['Highlights_Info']}}</td>
+         <td>{{review['Easy_Payment_Info']}}</td>
+         <td>{{review['Seller_Info']}}</td>
+         <td>{{review['Description_Info']}} </td>
+         <td>{{review['Product_Specification']}}</td>
+         <td>{{review['Reviewer_Name']}}</td>
+         <td>{{review['Reviewer_Rating']}}</td>
+         <td>{{review['Comment_Heading']}}</td>
+         <td>{{review['Comment']}} </td>
+         <td>{{review['Review_Comments']}} </td>
+         <td>{{review['Thums_Up']}} </td>
+         <td>{{review['Thums_Down']}} </td>
+
+
+         {% endfor %}
+   </table>
+
+</div>
+
+
+</body>
+
+</html>

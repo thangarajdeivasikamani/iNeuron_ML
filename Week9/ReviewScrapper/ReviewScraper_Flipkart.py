@@ -19,7 +19,7 @@ from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen as uReq
 # Intreact with two different hetrogenious system
 app = Flask(__name__)  # initialising the flask app with the name 'app'
-
+import json
 @app.route('/', methods=['POST','GET'])
 def homepage():
     return render_template('index.html')
@@ -96,7 +96,10 @@ def index():
                 # While display we can use limit
                 # x = table.insert_one(mydict) #insertig the dictionary containing the rview comments to the collection
                 reviews.append(mydict) #  appending the comments to the review list
+
             # Disply the result using result html template
+            # json_output = json.dump(reviews)
+            # print(json_output)
             return render_template('results.html', reviews=reviews) # showing the review to the user
         except:
             return 'something is wrong'

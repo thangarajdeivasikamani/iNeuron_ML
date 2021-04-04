@@ -1,0 +1,79 @@
+[
+   {
+      "Product":"samsung",
+      "Name":"Mageshwaran M",
+      "Rating":"5",
+      "CommentHead":"Perfect product!",
+      "Comment":"I am loving it and this is a awesome mobile . The features are very useful and advanced. I am very satisfied with the product. Good in range delivery on time. Happy with the best service. Thank you Flipkart."
+   },
+   {
+      "Product":"samsung",
+      "Name":"Flipkart Customer",
+      "Rating":"5",
+      "CommentHead":"Just wow!",
+      "Comment":"First of all I would like to thank Flipkart for smart upgrade deal.And the second is Samsung for this wonderful device Science many months I am looking for a device for my business needs This device fulfill all my needs very special thanks to Samsung and Team.In this 1. First I like battery backup \"supper Backup\" usually I need to use very hardly 8 hrs per day (in this mobile data& Hotspot and 8 to 10 apps will work background) remaining time use as normal 95% 🔋 will work for two days co..."
+   },
+   {
+      "Product":"samsung",
+      "Name":"Vithoba  Kolamkar ",
+      "Rating":"5",
+      "CommentHead":"Best in the market!",
+      "Comment":"Amazing camera quality and overall it's worth it Really liked this mobile phone and battery back is also amazing... This phone was gifted by my wife on my 50th birthday and I really liked this phone and definitely going to suggest others as well for this piece Thanks a tonn 😊"
+   },
+   {
+      "Product":"samsung",
+      "Name":"Dipankar Chakraborty",
+      "Rating":"4",
+      "CommentHead":"Wonderful",
+      "Comment":"Honest review: Front camera is not good... Reddish picture quality but only I like about this phone is rare camera, display is good and battery backup is also good."
+   },
+   {
+      "Product":"samsung",
+      "Name":"Suryakant bharati",
+      "Rating":"1",
+      "CommentHead":"Not recommended at all",
+      "Comment":"The body is very delicate.. it got scratches all over it on the back after putting a back cover .. just in 2  days. Also the performance is not too good.. it lags.. when u rotate the phone the display hangs for few seconds.. its not a smooth display.. camera good but not like 64 mp.. battery backup really good but takes 3 hours to charge.."
+   },
+   {
+      "Product":"samsung",
+      "Name":"Flipkart Customer",
+      "Rating":"5",
+      "CommentHead":"Worth every penny",
+      "Comment":"NYC performance, NYC battery backup, NYC Camera (both Rear & Front), NYC S.AmoLED Display and very much functions and specifications which I can't list all...Don't look for any other Phone . This Smartphone is worth each Penny.😀😀😀.This phone can truly satisfy all the needs which a child/a man/or anybody would hope .1. Very nice 64mp Rear camera, Single Take, 4k video Recording, Slow Motion & Super Slow Motion & Night Hyperlapse and much more brilliant functions.2. Excellent Front Camera..."
+   },
+   {
+      "Product":"samsung",
+      "Name":"Arpan Debnath",
+      "Rating":"5",
+      "CommentHead":"Perfect product!",
+      "Comment":"This is best thing you can get at this price from a reputed brand with Made in India tag. First time I ordered Samsung  and am happy to say. I'm writing after 90 days of usage, but this should not be different as my experience with Samsung has been most consistent as compared to other mobile brands I've used earlier.Good:- Android 10! Beautiful looks! Finally I can delete SMS from notification now!!- Display is excellent with Blue light filter.- Performance is good. No heating or laggi..."
+   },
+   {
+      "Product":"samsung",
+      "Name":"Praveen Viswanath",
+      "Rating":"5",
+      "CommentHead":"Best in the market!",
+      "Comment":"Galaxy Fantastic 41 is what I would call this latest gadget what I posses from Samsung!!  To start with it's really sleek and the way the edges are smoothly bewled, feel like not letting it go out of your hand. Not just that the reason it's fantastic also is the battery is massive 6000mha and lightweight hence it's Fantastic 41!!!Pictures taken on this Fantastic 41, is really Fantabulous. I did visit Goa last week and those snaps are going to be my best memory ever in the land of Goa. The q..."
+   },
+   {
+      "Product":"samsung",
+      "Name":"Sonu Kumar ",
+      "Rating":"5",
+      "CommentHead":"Best in the market!",
+      "Comment":"Today's I'm writing my review after 12 days used.First of all I would like to say it's front camera is best, awesome as per as 32MP and rear cameras are also good, one thing is best in rear camera is change background effects which thing I liked so much. Now I will come on battery 🔋backup, it's battery backup is also good as per as 6000Mah. If your phone is 100% charged then I will work 2 days. And now would like to say it's performance, it's performance is best no lag and work smoothly. ..."
+   },
+   {
+      "Product":"samsung",
+      "Name":"Ankit Verma ",
+      "Rating":"5",
+      "CommentHead":"Great product",
+      "Comment":"Highly Recommended to BuyGreat Phone! What a BuyI Have Purchase it on Big Billion Days at FlipkartTill now Great Performance.I want to buy a phone which have Great battery and camera feature, Samsung F41 fulfill my dream.No lagging, long lasting battery, superb camera quality simply wow.Battery takes 2- 2.5 hours to fully charge and give us wonderful backup. My all work on call & whatsapp can easily manage in one charge. Also you use YouTube,  gaming  internet Surfing in one charge.C..."
+   },
+   {
+      "Product":"samsung",
+      "Name":"No Name",
+      "Rating":"No Rating",
+      "CommentHead":"No Comment Heading",
+      "Comment":"No Customer Comment"
+   }
+]
