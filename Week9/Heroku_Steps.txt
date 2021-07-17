@@ -1,0 +1,54 @@
+# AMZON AWS, Google cloud platform(GCP),Microsoft AZURE,Oracle , Heroku,IBM BROMIX,Alibaba
+
+Heroku- Salesforce
+
+
+
+
+1. Create the project
+2. map the env & create the new virtual envoriment.
+3. Create the plain web scraper with two methods / & /Scrap
+   edit & map the required Template
+4. Default will open index & some one hit /scrap will open scrap page
+5. Create the requirement.txt file using pip freeze >> requirement.txt python command
+6. Remove uncessary imported file in the requirement.txt
+7. Create the Procfile without any extention add the line as web: gunicorn app:app
+8. Install git & ensure whether it's working using git status command
+9. create the heroku login account in website
+10. install the heroku CLI app - Will help to push the local code to cloud platform
+11. Go to anaconda prompt type heroku login
+12. Will nagigate to browser & clcik OK
+13. go to Heroku login - Clcik new app & give name like review-webscrapper-thanga
+14. Check the deployement option in the clcik app - depy tab
+   https://dashboard.heroku.com/apps/review-webscrapper-thanga/deploy/heroku-git
+15. Navigate to your project path in the anaconda prompt( where you have typed as heroku login)
+16.Create the new envoriment  example: 
+(base) C:\MachineLearning\iNeuron_ML\Week9\HerokuFlaskDemo-master>conda create -n testreview python = 3.6.9
+17.Activate the envoriment
+18.Install the dependency
+19. Do $ git init
+20. Check whether the git initize done using git status
+21. Next give command ( means heroku git:remote -a ( app name)
+
+ heroku git:remote -a review-webscrapper-thanga
+
+22. Give the following commnd 
+
+$ git add .
+$ git commit -am "make it better"
+$ git push heroku master
+
+23.Wait for couple of minute
+24.Get the link & do the scraping.
+
+ https://review-webscrapper-thanga.herokuapp.com/
+
+25. Dyno means - 500 hrs we will get - (means 30 min for each dyno. So 1000 times we can restart)
+26. Check resource,build
+27. Collabarate -multiple people can work
+28. Maximum 5 app we can deploy or 500MB. we need to pay if we use more
+29. we can add this app into required domain or website ( we can transfer the ownership)
+30. we can move maintance also.
+31.Real time loging - we need to pay
+32. we can create CI & pipeline also
+

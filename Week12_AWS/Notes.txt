@@ -1,0 +1,58 @@
+1.inside the static folder we will store css(Page Design), java script,image
+2.Base file is the place hoder,header
+3.Whenever we need to deploy the application in AWS the file name should be application.py
+
+if we have differnt name. But the object should create the same inside the application.py file.
+
+application = Flask(__name__) # initializing a flask app
+app=application
+
+4. All the place we need to use App keyboard. e.g @app.route('/',methods=['GET'])
+5. @cross_origin() Will help check the server and client interface.
+6. Select the root folder example MLFORCloudDeployemnt and clcik new- Select Directory
+7. Give name as ‘.ebextensions’ 
+8. create a file ‘python.config’ inside .ebextensions. Make sure to populate the content of python.config,
+
+as below
+
+option_settings: 
+"aws:elasticbeanstalk:container:python":
+ WSGIPath: application.py
+
+Mandatory metion these three line.
+
+Ensure that the WSGIPath has application name is proper.
+
+we are telling AWS use elasticbeanstalk (Kind of machine/cloud /virtual machine)and create the container
+and give the WSGI path as our application name.
+
+Unicon also kind of server.
+
+
+10. Go to folder and select .ebextention,static,template folders,application.py,finalized.pickle(model file)
+ and requirement.txt file & right click & send to compress folder option & rename the folder name
+11. go to amazon and login as root user
+
+Email:tha
+Password: Ma
+
+
+12. Click sing into console button
+13. select the service -> Elastic Beanstalk.
+14. Select create application.
+
+15. Give the app name
+16. If required give key & value 
+17.Upload the file
+18. Click create application.
+
+19.wait for 2 to 3 min to create the file.
+
+20. Application will be we can see Envoriment or application menu
+
+21. if we want delete select the application menu- Select required app-Clcik action-Delete application
+
+22.How to check the log- Click the Envoriments - Select the app- Double clcik - Click logs
+
+
+9.

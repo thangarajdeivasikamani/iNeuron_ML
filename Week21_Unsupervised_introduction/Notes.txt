@@ -1,0 +1,19 @@
+https://scikit-learn.org/stable/modules/clustering.html
+
+
+1.Form the PDF we can see the circule data in the first row- Are we able to separte (Means inner cirecle & ourder circle) -No
+But DBSCAN will provide better result.
+
+Similar way we can each algo is defined for differnt differnt data set.
+
+2.Second DBSCAN Will separte two scatter data very well.
+3. Third dataset - DBScan provide very good result with outlier(black) info.
+4. Fourth data set - DB Scan 
+5. Simple data set - Every one provide good result.
+6. Only one box - no need cluster - K-means provide cluster - But DBSCAN Provide better result .( Consider single box as it is)
+
+
+OPTICS = Time more - expensive.
+
+
+

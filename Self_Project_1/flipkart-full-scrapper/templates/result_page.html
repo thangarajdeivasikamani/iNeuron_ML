@@ -1,0 +1,181 @@
+<html>
+<head>
+    <title>Reviews Scrapper</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <link href="{{ url_for('static',filename='css/result_css.css')}}" media="screen" type="text/css" rel="stylesheet" />
+</head>
+<body>
+
+	<header>
+	<a href="{{ url_for('homepage') }}" >
+		<img src="{{ url_for('static',filename='images/ai_logo.png')}}" class="logo">
+	</a>
+	<div class="toggle" onclick = "toggleMenu();"></div>
+	<ul class="navigation">
+
+		<li><a href="{{ url_for('homepage') }}">HOME</a>
+		</li>
+	  
+		<li><a href="{{ url_for('about') }}">ABOUT US</a></li>
+	</ul>
+</header>
+	<div class="card-body">
+	<div class="card-main">
+		<div class="card">
+			<div class="circle"></div>
+			<div class="content">
+				<h2>
+					{{product_detail[0]['Product Name']}}
+				</h2>
+				<p>
+					{%for product_highlight in product_highlights[0][:4]%}
+						<li>{{product_highlight}}</li>
+					{%endfor%}</p>
+
+
+
+				
+				<a href="{{product_detail[0]['Product link']}}">BUY NOW !</a>
+			</div>
+			<img src="{{product_detail[0]['Product Image Url']}}">
+		   
+		</div>
+	</div>
+</div>
+
+	<div class="pd">
+		<table>
+
+			<tr>
+				<th>Product Price<tab>Actual Price</tab> <tab>Discount</tab></th>
+			</tr>
+			<tr>
+				<td>{{product_detail[0]['Product Price']}}<tab><tab>{{product_detail[0]['Actual Product Price']}}<tab><tab>{{product_detail[0]['Discount']}}</td>
+			</tr>
+
+			<tr>
+				<th>Overall Ratings</th>
+			</tr>
+			<tr>
+				<td>{{product_detail[0]['Product Rating']}}</td>
+			</tr>
+
+			<tr>
+				<th> Easy Payment Options</th>
+			</tr>
+			<tr>
+				<td>{{product_detail[0]['Easy Payment Options']}}</td>
+
+			</tr>
+
+			<tr>
+				<th>Availability</th>
+			</tr>
+			<tr>
+				<td>{{product_detail[0]['currently_available']}}</td>
+
+			</tr>
+
+			<tr>
+				<th>Product Seller Name</th>
+			</tr>
+			<tr>
+				<td>
+					{{product_detail[0]['Produtct Seller']}}
+				</td>
+			</tr>
+
+			<tr>
+				<th> Product Seller Rating</th>
+			</tr>
+			<tr>
+				<td>{{product_detail[0]['Seller Rating']}}</td>
+
+			</tr>
+
+			<tr>
+				<th> Available Offer</th>
+			</tr>
+			<tr>
+				<td>{{product_detail[0]['Available_Offer']}}</td>
+
+			</tr>
+
+
+		</table>
+
+	</div>
+	<h2 style="color:black;">User Reviews for {{product_detail[0]['Product Name']}}<tab><tab><tab>Total Reviews: {{total_reviews_}}</h2>
+	<div class="pie">
+<div class="chr">
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="chart" id="bargraph" style="background-color:#FFFFFF;">
+
+                 <script>
+                    var graphs = {{pie_chart | safe}};
+                    Plotly.plot('bargraph',graphs,{});
+                </script>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+    </div>
+    </div>
+
+
+
+
+
+<div class="table-main">
+<table class="container1">
+	<thead>
+		<tr>
+			<th><h1>Product</h1></th>
+			<th><h1>Name</h1></th>
+			<th><h1>Rating</h1></th>
+			<th><h1>Using Since</h1></th>
+			<th><h1>Heading</h1></th>
+			<th><h1>Comment</h1></th>
+		</tr>
+	</thead>
+	<tbody>
+	{%for review in reviews%}
+	<tr>
+		<td>{{review.get('Product')}}</td>
+         <td>{{review.get('Name')}}</td>
+         <td>{{review.get('Rating')}}</td>
+          <td>{{review.get('Using Since')}}
+         <td>{{review.get('CommentHead')}}</td>
+         <td>{{review.get('Comment')}} </td>
+	</tr>
+	{%endfor%}
+		
+	</tbody>
+	
+</table>
+</div>
+	<a class="gotopbtn" href="#"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+
+<script type='text/javascript'>
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+
+
+   
+    </script>
+
+</body>
+</html>

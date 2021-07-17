@@ -1,0 +1,7 @@
+{
+  "data": [
+    {
+      "Age": 19,
+      "EstimatedSalary":19000
+      }
+  ]}

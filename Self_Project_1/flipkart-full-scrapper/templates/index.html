@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/index_style.css')}}">
+    <title>Home</title>
+</head>
+<body>
+    
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="{{ url_for('homepage') }}" >
+                <img src="{{ url_for('static',filename='images/ai_logo.png')}}" class="logo">
+            </a>
+           <div class="toggle" onclick = "toggleMenu();"></div>
+
+            <ul class="navigation">
+               
+                <li>
+
+                <form action='/scrap' method="POST">
+                    <input type="text" class="textbox" placeholder="Search" name="search_content" id="search_content">
+                    <input title="Search" value="Search" type="submit" class="button">
+                  </form>
+                  </li>
+            
+                <li><a href="{{ url_for('homepage') }}">HOME</a>
+                </li>
+              
+                <li><a href="{{ url_for('about') }}">ABOUT US</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Looking To Buy New Product<br>But<span> Worried ?</span></h2>
+                <p>
+                    Don't Worry ! We are at you servicce ! We will help you to find out the insights of the products. You can look For the <b>Customer Reviews</b> , <b>Total-Rating</b> , With detailed <b>Graphical Representaion</b>.
+                    Now it's easy to make Decision😊.
+                    If you like the product you can <b>DIRECTLY BUY FROM HERE !</b>
+                    </p>
+                    <br>
+                <form action='/scrap' method="POST">
+                    <input type="text" class="textbox" placeholder="Search" name="search_content" id='search_content'>
+                    <input title="Search" value="Search" type="submit" class="button">
+                  </form>
+                  </li>
+            </div>
+
+            <div class="imgBox">
+                <img src="{{ url_for('static',filename='images/feed_1.jpg')}}" class='scrapper'>
+            </div>
+            <!-- A84AEC
+            0825A9 -->
+        </div>
+        <ul class='thumb'>
+            <li><img src="{{ url_for('static',filename='images/d.png')}}" onclick="imgSlider('{{ url_for('static',filename='images/d.png')}}');changeCircleColur('#98F7ED')"> </li>
+            <li><img src="{{ url_for('static',filename='images/star3.png')}}" onclick="imgSlider('{{ url_for('static',filename='images/star_1.jpg')}}');changeCircleColur('#0825A9')"></li>
+            <li><img src="{{ url_for('static',filename='images/feed_2.png')}}" onclick="imgSlider('{{ url_for('static',filename='images/star3.png')}}');changeCircleColur('#E73A3A')"></li>
+        </ul>
+        <ul class='sci'>
+            <li><a href="https://www.facebook.com/rohit.wagh.143"><img src="{{ url_for('static',filename='images/facebook.png')}}"></a></li>
+            <li><a href="https://www.instagram.com/rohit_wagh_143/"><img src="{{ url_for('static',filename='images/instagram.png')}}"></a></li>
+            <li><a href="https://www.linkedin.com/in/rohit-wagh-541b991a3"><img src="{{ url_for('static',filename='images/linkedin (1).png')}}"></a></li>
+        </ul>
+    </section> 
+    <script type='text/javascript'>
+    function imgSlider(anything){
+        document.querySelector('.scrapper').src=anything;
+    }
+    function changeCircleColur(color){
+        const circle=document.querySelector('.circle')
+        circle.style.background=color;
+    }
+
+    function toggleMenu(){
+        var menuToggle = document.querySelector('.toggle');
+        var navigation = document.querySelector('.navigation')
+        menuToggle.classList.toggle('active')
+        navigation.classList.toggle('active')
+    }
+   
+    </script>
+    
+
+</body>
+</html>
